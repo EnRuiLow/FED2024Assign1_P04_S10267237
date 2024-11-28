@@ -1,8 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basketball League</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 36px;
+    }
+
+    header p {
+      font-size: 20px;
+      color: #555;
+    }
+
+    .box-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .box {
+      background-color: #ddd;
+      width: 350px; /* Increased width */
+      height: 500px; /* Increased height */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .box h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .box button {
+      background-color: black;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .box button:hover {
+      background-color: #333;
+    }
+  </style>
 </head>
+<body>
+  <header>
+    <h1>Welcome to Basketball League</h1>
+    <p>Train Like a Pro, Play Like a Champ.</p>
+  </header>
+
+  <div class="box-container">
+    <!-- Credentials Box -->
+    <div class="box">
+      <h3>Credentials</h3>
+      <button onclick="window.location.href='credentials.html';">Go</button>
+    </div>
+
+    <!-- Workout Box -->
+    <div class="box">
+      <h3>Workout</h3>
+      <button onclick="window.location.href='workout.html';">Go</button>
+    </div>
+
+    <!-- Trained Professionals / Coaches Box -->
+    <div class="box">
+      <h3>Professionals</h3>
+      <button onclick="window.location.href='professionals.html';">Go</button>
+    </div>
+  </div>
+</body>
 </html>
+

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trained Professionals</title>
+  <style>
+    /* Reset body margin and padding */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #2c2c2c; /* Dark background */
+      color: white;
+      height: 100%;
+      width: 100%;
+    }
+
+    /* Fullscreen container */
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      min-height: 100vh;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    /* Header section */
+    .header {
+      text-align: center;
+      margin-bottom: 50px;
+      width: 100%;
+    }
+
+    /* Navbar */
+    nav {
+      text-align: center;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      padding: 15px 30px;
+      background-color: #d6d6d6;
+      border-radius: 4px;
+      margin: 0 15px;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      background-color: #bbb;
+    }
+
+    /* Section with the credentials cards */
+    .credentials-section {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-top: 30px;
+      justify-content: center;
+    }
+
+    .credential-card {
+      background-color: #333;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      width: 30%;
+      max-width: 350px;
+      min-width: 250px;
+      margin-bottom: 30px;
+    }
+
+    .credential-card img {
+      width: 100%;
+      height: 200px;
+      background-color: #ccc; /* Placeholder for image */
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .credential-card p {
+      margin-top: 15px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .credential-card footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    /* Full width for nav and content */
+    .header h1, nav a {
+      width: 100%;
+    }
+
+    /* Responsive adjustments for mobile/tablet screens */
+    @media (max-width: 768px) {
+      .credentials-section {
+        justify-content: center;
+      }
+
+      .credential-card {
+        width: 90%;
+        margin-bottom: 20px;
+      }
+
+      nav a {
+        padding: 10px 20px;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Professionals</a>
+    </nav>
+
+    <div class="header">
+      <h1>Trainers</h1>
+    </div>
+
+    <div class="credentials-section">
+      <div class="credential-card">
+        <img src="greg-popovich.jpg" alt="Greg Popovich">
+        <p>Team: San Antonio Spurs (NBA)</p>
+        <p>Achievements:</p>
+        <p>5-time NBA Champion.</p>
+        <p>Longest-tenured NBA coach with a reputation for developing players and fostering teamwork.</p>
+        <p>Known for: Exceptional game strategy, adaptability, and creating a strong team culture.</p>
+        
+      </div>
+      <div class="credential-card">
+        <img src="phil-jackson.jpg" alt="Phil Jackson">
+        <p>Teams: Chicago Bulls, Los Angeles Lakers (NBA)
+        <p>Achievements:</p>
+        <p>11 NBA Championships (6 with the Bulls, 5 with the Lakers).</p>
+        <p>Nicknamed "The Zen Master" for his unique coaching style blending mindfulness and basketball strategy.</p>
+        <p>Known for: Popularizing the Triangle Offense and managing star players effectively.</p>
+        
+      </div>
+      <div class="credential-card">
+        <img src="geno-auriemma.jpg" alt="Geno Auriemma">
+        <p>Team: University of Connecticut (UConn Women's Basketball)</p>
+        <p>Achievements:</p>
+        <p>11 NCAA National Championships.</p>
+        <p>Numerous undefeated seasons and a record-setting winning streak.</p>
+        <p>Known for: Developing some of the best players in women’s basketball and creating a culture of excellence.</p>
+        
+      </div>
+    </div>
+  </div>
+</body>
+</html>
