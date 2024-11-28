@@ -100,3 +100,56 @@ body, h1, h2, h3, p, ul, nav, button {
   #snapshot-button:hover {
     background-color: #faa307; /* Slightly darker for hover effect */
   }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .content ul {
+          width: 90%; /* Full width for smaller screens */
+        }
+  
+        .header a {
+          left: 10px; /* Adjust home button position for smaller screens */
+          font-size: 14px; /* Smaller font for better fit */
+          padding: 8px 16px;
+        }
+  
+        .header h1 {
+          font-size: 20px; /* Reduce title size */
+        }
+  
+        .content h2 {
+          font-size: 24px; /* Adjust subtitle size */
+          text-align: center; /* Center-align for smaller screens */
+        }
+  
+        .upload-section button, 
+        .done-button button {
+          width: 100%; /* Make buttons full width */
+          padding: 12px; /* Maintain padding for touch usability */
+          font-size: 16px; /* Adjust button font size */
+        }
+  
+        .upload-section span {
+          font-size: 16px; /* Reduce text size */
+        }
+      }
+  
+      @media (max-width: 480px) {
+        .content h2 {
+          font-size: 20px; /* Further adjust subtitle size for very small screens */
+        }
+  
+        .content ul {
+          font-size: 16px; /* Smaller text for list items */
+          padding-left: 10px; /* Adjust padding */
+        }
+  
+        .upload-section span {
+          font-size: 14px;
+        }
+  
+        .done-button button {
+          font-size: 14px;
+        }
+      }
+  

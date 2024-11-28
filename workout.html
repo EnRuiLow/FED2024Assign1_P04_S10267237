@@ -22,20 +22,19 @@
       height: 100%;
       display: flex;
       flex-direction: column;
+      align-items: center;
     }
 
     /* Header styles */
     .header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px 30px;
+      width: 100%;
+      padding: 20px;
       background-color: #222;
-      color: white;
+      text-align: center;
     }
 
     .header h1 {
-      font-size: 28px;
+      font-size: 2rem;
       margin: 0;
     }
 
@@ -44,33 +43,37 @@
       background-color: #d3d3d3;
       color: black;
       text-align: center;
-      padding: 20px 0;
-      font-size: 20px;
+      padding: 15px 0;
+      font-size: 1.2rem;
+      width: 100%;
     }
 
     /* Workout cards container */
     .workouts {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      flex-wrap: wrap;
-      padding: 40px;
-      gap: 50px; /* Increased spacing between cards */
+      padding: 20px;
+      gap: 30px;
+      width: 100%;
     }
 
     /* Workout card styles */
     .workout-card {
       background-color: #d3d3d3; /* Light grey */
-      width: 350px; /* Increased width */
-      height: 350px; /* Increased height */
+      width: 30%;
+      max-width: 400px;
+      min-width: 280px;
+      aspect-ratio: 1; /* Maintain a square shape */
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      border-radius: 15px; /* Slightly rounder corners */
+      border-radius: 10px;
       border: 2px solid transparent;
       transition: 0.3s;
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Add shadow for visual enhancement */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
     .workout-card:hover {
@@ -79,10 +82,9 @@
     }
 
     .workout-card h2 {
-      margin: 0;
-      font-size: 24px; /* Increased font size */
+      font-size: 1.5rem;
+      margin: 0 0 20px 0;
       color: black;
-      margin-bottom: 30px; /* More spacing below heading */
     }
 
     .workout-card button {
@@ -90,14 +92,59 @@
       color: white;
       border: none;
       border-radius: 5px;
-      padding: 15px 30px; /* Larger button size */
-      font-size: 18px; /* Larger font size */
+      padding: 10px 20px;
+      font-size: 1rem;
       cursor: pointer;
       transition: 0.3s;
     }
 
     .workout-card button:hover {
       background-color: #444;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .workout-card {
+        width: 45%;
+        min-width: 200px;
+      }
+
+      .workout-card h2 {
+        font-size: 1.2rem;
+      }
+
+      .workout-card button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .workouts {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .workout-card {
+        width: 90%;
+      }
+
+      .header h1 {
+        font-size: 1.5rem;
+      }
+
+      .sub-header {
+        font-size: 1rem;
+      }
+
+      .workout-card h2 {
+        font-size: 1rem;
+      }
+
+      .workout-card button {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+      }
     }
   </style>
 </head>
@@ -110,7 +157,7 @@
 
     <!-- Sub-header -->
     <div class="sub-header">
-      Choose your workout
+      Choose your workout!
     </div>
 
     <!-- Workout cards -->
