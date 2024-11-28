@@ -17,30 +17,33 @@
 
     header {
       text-align: center;
-      margin-top: 30px;
-      margin-bottom: 20px;
+      margin: 20px 0;
     }
 
     header h1 {
-      font-size: 36px;
+      font-size: 2.5rem;
     }
 
     header p {
-      font-size: 20px;
+      font-size: 1.25rem;
       color: #555;
     }
 
     .box-container {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      gap: 30px;
-      margin-top: 20px;
+      gap: 20px;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
     }
 
     .box {
       background-color: #ddd;
-      width: 350px; /* Increased width */
-      height: 500px; /* Increased height */
+      width: 100%;
+      max-width: 350px; /* Set a maximum width for desktop */
+      height: 500px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -50,7 +53,7 @@
     }
 
     .box h3 {
-      font-size: 22px;
+      font-size: 1.5rem;
       margin-bottom: 10px;
     }
 
@@ -58,7 +61,7 @@
       background-color: black;
       color: white;
       padding: 10px 20px;
-      font-size: 16px;
+      font-size: 1rem;
       border: none;
       border-radius: 5px;
       cursor: pointer;
@@ -67,6 +70,39 @@
 
     .box button:hover {
       background-color: #333;
+    }
+
+    /* Media Queries for Smaller Screens */
+    @media (max-width: 768px) {
+      .box {
+        height: 400px; /* Reduce height for smaller screens */
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .box-container {
+        gap: 15px;
+      }
+
+      .box {
+        height: 300px; /* Further reduce height for very small screens */
+      }
+
+      .box h3 {
+        font-size: 1.25rem;
+      }
+
+      .box button {
+        font-size: 0.9rem;
+      }
     }
   </style>
 </head>
@@ -97,4 +133,3 @@
   </div>
 </body>
 </html>
-
