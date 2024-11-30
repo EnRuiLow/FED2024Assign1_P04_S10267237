@@ -30,46 +30,63 @@
     }
 
     .box-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      width: 100%;
-      padding: 20px;
-      box-sizing: border-box;
-    }
+  display: flex;              /* Enables flexbox */
+  flex-wrap: wrap;            /* Allows boxes to wrap onto new rows */
+  justify-content: center;    /* Centers the boxes horizontally */
+  gap: 20px;                  /* Adds spacing between boxes */
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
-    .box {
-      background-color: #ddd;
-      width: 100%;
-      max-width: 350px; /* Set a maximum width for desktop */
-      height: 500px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
+.box {
+  background-color: #ddd;
+  display: flex;              /* Enables flexbox within each box */
+  flex-direction: column;     /* Ensures content is stacked vertically */
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 350px;           /* Set max width for the box */
+  height: 500px;              /* Set height for the box */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;           /* Prevent content overflow */
+}
 
-    .box h3 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-    }
+.box h3 {
+  margin: 10px;
+  font-size: 1.5rem;
+}
 
-    .box button {
-      background-color: black;
-      color: white;
-      padding: 10px 20px;
-      font-size: 1rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
+.box img {
+  flex-grow: 1;               /* Makes the image expand to fill the box */
+  width: 100%;                /* Ensures the image fits the box horizontally */
+  height: auto;               /* Maintains the aspect ratio */
+  object-fit: cover;          /* Ensures the image fills the box while cropping excess */
+}
 
-    .box button:hover {
-      background-color: #333;
+.box button {
+  margin: 10px;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.box button:hover {
+  background-color: #333;
+}
+
+    .box img {
+      max-width: 100%; /* Ensure the image doesn't overflow the box width */
+      max-height: 70%; /* Keep the image height proportional within the box */
+      object-fit: cover; /* Ensures the image fills its container without distortion */
+      border-radius: 5px; /* Optional: Add rounded corners */
+      margin-bottom: 10px; /* Add space between the image and the button */
     }
 
     /* Media Queries for Smaller Screens */
@@ -111,25 +128,28 @@
     <h1>Welcome to Basketball League</h1>
     <p>Train Like a Pro, Play Like a Champ.</p>
   </header>
-
   <div class="box-container">
     <!-- Credentials Box -->
     <div class="box">
       <h3>Credentials</h3>
+      <img src="text.jpg" alt="Credentials" class="box-image">
       <button onclick="window.location.href='credentials.html';">Go</button>
     </div>
-
+  
     <!-- Workout Box -->
     <div class="box">
       <h3>Workout</h3>
+      <img src="workout.jpg" alt="Workout" class="box-image">
       <button onclick="window.location.href='workout.html';">Go</button>
     </div>
-
-    <!-- Trained Professionals / Coaches Box -->
+  
+    <!-- Professionals Box -->
     <div class="box">
       <h3>Professionals</h3>
+      <img src="professionals.jpg" alt="Professionals" class="box-image">
       <button onclick="window.location.href='professionals.html';">Go</button>
     </div>
   </div>
+  
 </body>
 </html>
