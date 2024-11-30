@@ -99,15 +99,10 @@
       font-size: 18px;
     }
 
-    .video-container {
-      flex: 1; /* Allow the video section to grow */
-      max-width: 500px; /* Set max width of the video container */
-      border: 2px solid yellow;
-      background-color: #000; /* Optional: background color for better visibility */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+    .video-container video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
 
     .upload-section button {
       background-color: black;
@@ -164,15 +159,10 @@
         <li>You could watch the video for more information</li>
       </ul>
       <div class="video-container">
-        <iframe 
-          width="100%" 
-          height="100%" 
-          src="https://www.youtube.com/embed/oADaM2L1YLc" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
-        </iframe>
+        <video controls>
+          <source src="OnCourt.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
       <div class="upload-section">
         <span>Snap a picture</span>
