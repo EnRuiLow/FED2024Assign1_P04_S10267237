@@ -33,6 +33,7 @@
       background-color: #222;
       color: white;
       position: relative;
+      width: 100%;
     }
 
     .header a {
@@ -98,6 +99,16 @@
       font-size: 18px;
     }
 
+    .video-container {
+      flex: 1; /* Allow the video section to grow */
+      max-width: 500px; /* Set max width of the video container */
+      border: 2px solid yellow;
+      background-color: #000; /* Optional: background color for better visibility */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
     .upload-section button {
       background-color: black;
       color: white;
@@ -143,14 +154,26 @@
 
     <!-- Main Content -->
     <div class="content">
-      <h2>We’ll be doing a list of things</h2>
+      <h2>Court Training</h2>
       <ul>
-        <li>Shooting from the free throw line (5 × 20)</li>
-        <li>Shooting from the right corner (5 × 20)</li>
-        <li>Shooting from left corner(5 × 15)</li>
-        <li>Working on behind the leg crosses(5 × 15)</li>
-        <li>Working on chest passes (If you have a partner)</li>
+        <li>Pounding the ball with shift (15 seconds each side)</li>
+        <li>Crossovers from left to right (20 seconds)</li>
+        <li>Pound to joke cross (20 seconds)</li>
+        <li>Joke cross (20 seconds)</li>
+        <li>Between the legs and behind the back (20 seconds)</li>
+        <li>You could watch the video for more information</li>
       </ul>
+      <div class="video-container">
+        <iframe 
+          width="100%" 
+          height="100%" 
+          src="https://www.youtube.com/embed/oADaM2L1YLc" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
       <div class="upload-section">
         <span>Snap a picture</span>
         <button onclick="navigateToUpload()">Upload</button>
@@ -168,4 +191,4 @@
     }
   </script>
 </body>
-</html> 
+</html>
