@@ -63,8 +63,8 @@
     .workout-card {
       background-color: #d3d3d3; /* Light grey */
       width: 30%;
-      max-width: 400px;
-      min-width: 280px;
+      max-width: 450px;
+      min-width: 350px;
       aspect-ratio: 1; /* Maintain a square shape */
       display: flex;
       flex-direction: column;
@@ -100,6 +100,15 @@
 
     .workout-card button:hover {
       background-color: #444;
+    }
+
+
+    .box img {
+      max-width: 100%; /* Ensure the image doesn't overflow the box width */
+      max-height: 70%; /* Keep the image height proportional within the box */
+      object-fit: cover; /* Ensures the image fills its container without distortion */
+      border-radius: 5px; /* Optional: Add rounded corners */
+      margin-bottom: 10px; /* Add space between the image and the button */
     }
 
     /* Responsive Design */
@@ -164,14 +173,16 @@
     <div class="workouts">
       <!-- On the court workout -->
       <div class="workout-card">
-        <h2>On the court</h2>
-        <button onclick="goToWorkout('onCourt.html')">Select</button>
+        <h3 class="overlay-text">On Court drills</h3>
+        <img src="oncourt.jpg" alt="On court" class="workout-card">
+        <button onclick="goToWorkout('OnCourt.html')">Select</button>
       </div>
 
       <!-- Off the court workout -->
       <div class="workout-card">
-        <h2>Off the court</h2>
-        <button onclick="goToWorkout('offCourt.html')">Select</button>
+        <h3 class="overlay-text">Workout</h3>
+        <img src="offcourt.jpg" alt="On Court" class="workout-card">
+        <button onclick="goToWorkout('OffCourt.html')">Select</button>
       </div>
     </div>
   </div>

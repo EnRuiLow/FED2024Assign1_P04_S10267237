@@ -30,53 +30,53 @@
     }
 
     .box-container {
-  display: flex;              /* Enables flexbox */
-  flex-wrap: wrap;            /* Allows boxes to wrap onto new rows */
-  justify-content: center;    /* Centers the boxes horizontally */
-  gap: 20px;                  /* Adds spacing between boxes */
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-  }
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
 
     .box {
       background-color: #ddd;
-      display: flex;              /* Flexbox layout for vertical alignment */
+      display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
       width: 100%;
-      max-width: 350px;           /* Set a max width */
-      height: 500px;              /* Fixed height */
+      max-width: 350px;
+      height: auto; /* Allow height to adapt */
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      overflow: hidden;           /* Ensures content stays within the box */
+      overflow: hidden;
     }
 
     .image-container {
-      position: relative;         /* Ensures the overlay text can be positioned */
+      position: relative;
       width: 100%;
-      height: 100%;
+      height: 300px; /* Define height for images */
     }
 
     .box-image {
-      width: 100%;                /* Make image fill the container */
-      height: 100%;               /* Maintain height */
-      object-fit: cover;          /* Crop image as needed */
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     .overlay-text {
-      position: absolute;         /* Position the text on top of the image */
-      top: 50%;                   /* Center vertically */
-      left: 50%;                  /* Center horizontally */
-      transform: translate(-50%, -50%); /* Adjust for accurate centering */
-      color: white;               /* Text color */
-      background-color: rgba(0, 0, 0, 0.5); /* Add semi-transparent background */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
       padding: 10px 20px;
-      font-size: 1.5rem;          /* Adjust text size */
-      border-radius: 5px;         /* Optional: rounded corners */
+      font-size: 1.5rem;
+      border-radius: 5px;
       text-align: center;
-      z-index: 2;                 /* Ensure it appears above the image */
+      z-index: 2;
     }
 
     button {
@@ -95,45 +95,15 @@
       background-color: #333;
     }
 
-
-    .box img {
-      max-width: 100%; /* Ensure the image doesn't overflow the box width */
-      max-height: 70%; /* Keep the image height proportional within the box */
-      object-fit: cover; /* Ensures the image fills its container without distortion */
-      border-radius: 5px; /* Optional: Add rounded corners */
-      margin-bottom: 10px; /* Add space between the image and the button */
-    }
-
-    /* Media Queries for Smaller Screens */
-    @media (max-width: 768px) {
+    /* Mobile-friendly styles */
+    @media (max-width: 600px) {
       .box {
-        height: 400px; /* Reduce height for smaller screens */
+        width: 90%; /* Adjust width for smaller screens */
       }
 
-      header h1 {
-        font-size: 2rem;
-      }
-
-      header p {
-        font-size: 1rem;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .box-container {
-        gap: 15px;
-      }
-
-      .box {
-        height: 300px; /* Further reduce height for very small screens */
-      }
-
-      .box h3 {
-        font-size: 1.25rem;
-      }
-
-      .box button {
-        font-size: 0.9rem;
+      button {
+        width: 80%; /* Ensure button is touch-friendly */
+        font-size: 1.2rem;
       }
     }
   </style>
@@ -144,27 +114,20 @@
     <p>Train Like a Pro, Play Like a Champ.</p>
   </header>
   <div class="box-container">
-    <!-- Credentials Box -->
     <div class="box">
       <div class="image-container">
         <h3 class="overlay-text">Credentials</h3>
         <img src="text.jpg" alt="Credentials" class="box-image">
       </div>
-      <button onclick="window.location.href='credentials.html';">Go</button>
+      <button>Go</button>
     </div>
-  
-  
-    <!-- Workout Box -->
-      <div class="box">
-        <div class="image-container">
-          <h3 class="overlay-text">Workout</h3>
-          <img src="workout.jpg" alt="Workout" class="box-image">
-        </div>
-        <button onclick="window.location.href='workout.html';">Go</button>
+    <div class="box">
+      <div class="image-container">
+        <h3 class="overlay-text">Workout</h3>
+        <img src="workout.jpg" alt="Workout" class="box-image">
       </div>
-  
-      <!-- Professionals Box -->
-    
+      <button>Go</button>
+    </div>
     <div class="box">
       <div class="image-container">
         <h3 class="overlay-text">Professionals</h3>
@@ -173,6 +136,6 @@
       <button onclick="window.location.href='professionals.html';">Go</button>
     </div>
   </div>
-  
+  </div>
 </body>
 </html>
