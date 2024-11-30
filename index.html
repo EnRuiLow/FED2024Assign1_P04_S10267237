@@ -37,49 +37,64 @@
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
-}
+  }
 
-.box {
-  background-color: #ddd;
-  display: flex;              /* Enables flexbox within each box */
-  flex-direction: column;     /* Ensures content is stacked vertically */
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 350px;           /* Set max width for the box */
-  height: 500px;              /* Set height for the box */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  overflow: hidden;           /* Prevent content overflow */
-}
+    .box {
+      background-color: #ddd;
+      display: flex;              /* Flexbox layout for vertical alignment */
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 350px;           /* Set a max width */
+      height: 500px;              /* Fixed height */
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      overflow: hidden;           /* Ensures content stays within the box */
+    }
 
-.box h3 {
-  margin: 10px;
-  font-size: 1.5rem;
-}
+    .image-container {
+      position: relative;         /* Ensures the overlay text can be positioned */
+      width: 100%;
+      height: 100%;
+    }
 
-.box img {
-  flex-grow: 1;               /* Makes the image expand to fill the box */
-  width: 100%;                /* Ensures the image fits the box horizontally */
-  height: auto;               /* Maintains the aspect ratio */
-  object-fit: cover;          /* Ensures the image fills the box while cropping excess */
-}
+    .box-image {
+      width: 100%;                /* Make image fill the container */
+      height: 100%;               /* Maintain height */
+      object-fit: cover;          /* Crop image as needed */
+    }
 
-.box button {
-  margin: 10px;
-  background-color: black;
-  color: white;
-  padding: 10px 20px;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
+    .overlay-text {
+      position: absolute;         /* Position the text on top of the image */
+      top: 50%;                   /* Center vertically */
+      left: 50%;                  /* Center horizontally */
+      transform: translate(-50%, -50%); /* Adjust for accurate centering */
+      color: white;               /* Text color */
+      background-color: rgba(0, 0, 0, 0.5); /* Add semi-transparent background */
+      padding: 10px 20px;
+      font-size: 1.5rem;          /* Adjust text size */
+      border-radius: 5px;         /* Optional: rounded corners */
+      text-align: center;
+      z-index: 2;                 /* Ensure it appears above the image */
+    }
 
-.box button:hover {
-  background-color: #333;
-}
+    button {
+      margin: 10px;
+      background-color: black;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #333;
+    }
+
 
     .box img {
       max-width: 100%; /* Ensure the image doesn't overflow the box width */
@@ -131,22 +146,30 @@
   <div class="box-container">
     <!-- Credentials Box -->
     <div class="box">
-      <h3>Credentials</h3>
-      <img src="text.jpg" alt="Credentials" class="box-image">
+      <div class="image-container">
+        <h3 class="overlay-text">Credentials</h3>
+        <img src="text.jpg" alt="Credentials" class="box-image">
+      </div>
       <button onclick="window.location.href='credentials.html';">Go</button>
     </div>
   
-    <!-- Workout Box -->
-    <div class="box">
-      <h3>Workout</h3>
-      <img src="workout.jpg" alt="Workout" class="box-image">
-      <button onclick="window.location.href='workout.html';">Go</button>
-    </div>
   
-    <!-- Professionals Box -->
+    <!-- Workout Box -->
+      <div class="box">
+        <div class="image-container">
+          <h3 class="overlay-text">Workout</h3>
+          <img src="workout.jpg" alt="Workout" class="box-image">
+        </div>
+        <button onclick="window.location.href='workout.html';">Go</button>
+      </div>
+  
+      <!-- Professionals Box -->
+    
     <div class="box">
-      <h3>Professionals</h3>
-      <img src="professionals.jpg" alt="Professionals" class="box-image">
+      <div class="image-container">
+        <h3 class="overlay-text">Professionals</h3>
+        <img src="professionals.jpg" alt="Professionals" class="box-image">
+      </div>
       <button onclick="window.location.href='professionals.html';">Go</button>
     </div>
   </div>
