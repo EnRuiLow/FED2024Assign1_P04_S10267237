@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #0f0f0f;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,7 +13,7 @@ header {
   text-align: center;
   margin: 20px 0;
   padding: 10px;
-  background-color: #ffffff; /* Optional: Add a background to make it stand out */
+  background-color: #161515; /* Optional: Add a background to make it stand out */
   width: 100%;
   box-sizing: border-box;
   position: relative;
@@ -35,6 +35,7 @@ header p {
 }
 
 .box-container {
+  background-color: #141414;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -45,7 +46,7 @@ header p {
 }
 
 .box {
-  background-color: #ddd;
+  background-color: #7c7979;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -290,129 +291,6 @@ body, html {
     padding: 8px 12px;
   }
 }
-
- 
-
-/* This is the css code for professionals.html*/
-
-    /* General Reset */
-    body, html {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #2c2c2c; /* Dark background */
-      color: white;
-    }
-
-    /* Container for Full Page Layout */
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-    }
-
-    /* Header Section */
-    .header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .header h1 {
-      font-size: 2.5rem;
-      margin: 0;
-    }
-
-    /* Navigation Bar */
-    nav {
-      width: 100%;
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #333;
-      background-color: #d6d6d6;
-      padding: 10px 20px;
-      border-radius: 5px;
-      margin: 0 10px;
-      font-size: 1rem;
-      display: inline-block;
-    }
-
-    nav a:hover {
-      background-color: #bbb;
-    }
-
-    /* Credentials Section */
-    .trainer-section {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      width: 100%;
-    }
-
-    .trainer-card {
-      background-color: #333;
-      border-radius: 8px;
-      padding: 20px;
-      width: 30%;
-      max-width: 350px;
-      min-width: 280px;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    .trainer-card img {
-      width: 100%;
-      height: auto;
-      max-height: 200px;
-      border-radius: 8px;
-      background-color: #ccc;
-      object-fit: cover;
-    }
-
-    .trainer-card p {
-      font-size: 1rem;
-      line-height: 1.5;
-      margin: 15px 0;
-    }
-
-    .trainer-card footer {
-      font-size: 0.9rem;
-      color: #aaa;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      .trainer-card {
-        width: 80%;
-      }
-
-      nav a {
-        font-size: 0.9rem;
-        padding: 8px 16px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .credential-card {
-        width: 100%;
-      }
-
-      .header h1 {
-        font-size: 2rem;
-      }
-
-      nav a {
-        margin: 5px;
-      }
-    }
-  
-
-
 
 /* This is the css codes for OnCourt.html */
  /* Reset and body styling */
