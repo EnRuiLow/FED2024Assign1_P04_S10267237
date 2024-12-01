@@ -1,7 +1,7 @@
 <<<<<<< HEAD
 # FED2024Assignment1_P04_S10267237
 
-// My files and its uses
+## My files and its uses
 Home page --> index.html
 Workout page --> workout.html
 Credentials page --> credentials.html
