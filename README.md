@@ -1,21 +1,5 @@
-<<<<<<< HEAD
+
 # FED2024Assignment1_P04_S10267237
+This is a website that I came up with, the idea behind this is that I would like for there to be a actual good website that would actually guide people who are probably beginners or so to actually train to become a better basketballer. Thus, I created this website which would allow them to be able to train with us and to actually track their progress along the way through the usage of the pictures that they took. This would then further motivate them and they would also be able to train kind of "professionally" with the help of educated and professional coaches, thus making them no less of a student of the trainers.
 
-## My files and its uses
-Home page --> index.html
-Workout page --> workout.html
-Credentials page --> credentials.html
-Trainers page --> professionals.html
-Off-Court training page --> OffCourt.html
-On-Court training page --> OnCourt.html
-Uploading picture page --> uploadpic.html
-Finished workout page --> finish.html
-Additional Points page --> points.html
-
-Mobile version that I used --> Samsung Galaxy S20 Ultra
-
-### Explanation: 
-### At the start the Home page, which is index.html, contains the buttons to the credentials, professionals and Workout pages. For the credentials page shows the superstars using the website to help them train, and that they have improved in their training.Next, we have the Professionals page, for the professionals page, it shows the trainers that are actually on this app and are the ones who are making up the training routines for people to improve, as they have coached up multiple superstars and are one of the best and most popular coaches in the world, people would most likely be able to improve off this website. Next, for the Workouts page, it shows the Workouts that have been recomended by the coaches as they have seen most improvements in others training and that helps people to progress the most in the shortest amount of time, moreover, 
-=======
-# FED2024Assign1_P04_S10267237
->>>>>>> 4dbfafd7dbf9d784e9f6ac0e7b8fac545586fcf9
+##
