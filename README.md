@@ -21,4 +21,7 @@ Css was used mostly to help beautify and style the website,
 Javascript was used to create the points system which allows the user to take more pictures to track their progress
 Html was used to create the whole website mostly, for the inputing of pictures, texts, etc.
 
+## Testing
+1. hello
+- hello
 
