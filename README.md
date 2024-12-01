@@ -22,6 +22,26 @@ Javascript was used to create the points system which allows the user to take mo
 Html was used to create the whole website mostly, for the inputing of pictures, texts, etc.
 
 ## Testing
-1. hello
-- hello
+1. Progress page
+- Press of the Go button below the workout image
+- Then, press on either of the workouts, does not matter if its on or off the court.
+- Then, press the "Upload" button once there
+- Press on the back to home button 
+- There would be an alert when you press it, just press "OK"
+- Make sure that there is a alert when you press the "Take Picture" button and make sure that the points increase by 10.
+
+If used on desktop, the browser should most likely have the features mostly in a row, such as in credentials.html they should have the three nba stars side by side, and for the mobile version, they should be seperated into 3 different rows.
+
+## Credits
+### Content 
+- Every text was done by myself
+### Media
+- The pictures of Kyrie Irving were found in Google namespace under "kyrie irving jpg file"
+- The pictures of Steph Curry were found in Google namespace under "steph curry jpg file"
+- The pictures of Lebron James were found in Google namespace under "lebron james jpg file"
+- The pictures of Geno Auriemma were found in Google namespace under "geno auriemma jpg file"
+- The pictures of Greg Popovich were found in Google namespace under "greg popovich jpg file"
+- The pictures of Phil Jackson were found in Google namespace under "phil jackson jpg file"
+### Acknowledgements
+- This website was thought of by myself.
 
